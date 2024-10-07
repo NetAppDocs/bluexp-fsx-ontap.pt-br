@@ -1,0 +1,139 @@
+---
+sidebar: sidebar 
+permalink: use/task-creating-fsx-working-environment.html 
+keywords: Amazon FSx for NetApp ONTAP, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones, discover, storage capacity, iops, throughput, security group, security 
+summary: Usando o BlueXP , você pode criar ou descobrir um ambiente de trabalho do FSX for ONTAP para adicionar e gerenciar volumes e serviços de dados adicionais. 
+---
+= Crie ou descubra um ambiente de trabalho do FSX for ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Usando o BlueXP , você pode criar ou descobrir um ambiente de trabalho do FSX for ONTAP para adicionar e gerenciar volumes e serviços de dados adicionais.
+
+
+
+== Crie um ambiente de trabalho no FSX for ONTAP
+
+O primeiro passo é criar um ambiente de trabalho do FSX for ONTAP. Se você já criou um sistema de arquivos FSX for ONTAP no Console de Gerenciamento da AWS, você pode link:task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["Descubra-o usando o BlueXP "].
+
+.Antes de começar
+Antes de criar seu ambiente de trabalho no FSX for ONTAP no BlueXP , você precisará de:
+
+* O ARN de uma função do IAM que dá ao BlueXP  as permissões necessárias para criar um ambiente de trabalho do FSX for ONTAP. link:../requirements/task-setting-up-permissions-fsx.html["Adicionando credenciais da AWS ao BlueXP "]Consulte para obter detalhes.
+* A região e as informações de VPN para onde você criará a instância do FSX for ONTAP.
+
+
+.Passos
+. No BlueXP , adicione um novo ambiente de trabalho, selecione *Amazon Web Services* e clique em *Adicionar novo* para o Amazon FSX for NetApp ONTAP.
++
+image:screenshot_add_fsx_working_env.png["Uma captura de tela da adição de um ambiente de trabalho para o FSX for ONTAP"]
+
+. *FSX para autenticação ONTAP*
++
+.. Se houver uma função IAM existente na sua conta com as permissões corretas da AWS para o FSX for ONTAP, selecione-a no menu suspenso.
+.. Se não houver uma função do IAM na sua conta, clique em *credenciais* e siga as etapas do assistente para adicionar um ARN para uma função do AWS IAM com as credenciais do FSX for ONTAP. link:../requirements/task-setting-up-permissions-fsx.html["Adicionando credenciais da AWS ao BlueXP "]Consulte para obter detalhes.
+
+
+. *Detalhes e credenciais*
++
+.. Introduza o nome do ambiente de trabalho que pretende utilizar.
+.. Opcionalmente, você pode criar tags clicando no sinal de adição e inserindo um nome e um valor de tag.
+.. Opcionalmente, você pode especificar a hora de início para o FSX for ONTAP executar manutenção semanal de 30 minutos. Isso pode ser usado para garantir que a manutenção não coincide com atividades comerciais críticas. Se selecionar *sem preferência*, será atribuída uma hora de início aleatória. Você pode mudar isso a qualquer momento.
+.. Introduza e confirme a palavra-passe do cluster do ONTAP que pretende utilizar.
+.. Opcionalmente, desmarque a opção para usar a mesma senha para o usuário SVM e definir uma senha diferente.
+
+
+. *Modelo de implantação HA*
++
+.. Selecione um modelo de implantação HA *Single Availability Zone* ou *Multiple Availability Zones*. Para várias zonas de disponibilidade, selecione sub-redes em pelo menos duas zonas de disponibilidade para que cada nó esteja em uma zona de disponibilidade dedicada.
+.. Selecione a Virtual Private Cloud (VPC) que você deseja associar ao seu sistema de arquivos.
+.. Use um grupo de segurança existente ou selecione *Grupo de segurança gerado* para permitir que o BlueXP  gere um grupo de segurança que permita tráfego somente na VPC selecionada.
++
+
+NOTE: link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["Grupos de segurança da AWS"^] controle o tráfego de entrada e saída. Eles são configurados pelo administrador da AWS e estão associados ao link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["Interface de rede AWS Elastic (ENI)"^].
+
+
+
+. *IP flutuante* (somente zonas de disponibilidade múltiplas)
++
+Deixe _CIDR Range_ vazio para definir automaticamente um intervalo disponível. Opcionalmente, você pode usar https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-transit-gateway.html["AWS Transit Gateway"^] para configurar manualmente um intervalo.
+
++
+[WARNING]
+====
+.Os IPS nas seguintes gamas não são suportados:
+** 0,0.0.0/8
+** 127,0.0.0/8
+** 198.19.0.0/20
+** 224,0.0.0/4
+** 240,0.0.0/4
+** 255.255.255.255/32
+
+
+====
+. *Tabelas de rotas* (somente zonas de disponibilidade múltiplas)
++
+Selecione tabelas de rota que incluam rotas para os endereços IP flutuantes. Se você tiver apenas uma tabela de rota para as sub-redes na VPC (a tabela de rotas principal), o BlueXP  adicionará automaticamente os endereços IP flutuantes a essa tabela de rotas.
+
+. *Criptografia de dados*
++
+Aceite a chave mestra padrão da AWS ou clique em *alterar chave* para selecionar uma chave mestra do cliente (CMK) diferente da AWS. Para obter mais informações sobre CMK, link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-kms.html["Configurando o AWS KMS"^]consulte .
+
+. *Configuração de armazenamento*
++
+.. Selecione a taxa de transferência, a capacidade e a unidade. Você pode alterar a taxa de transferência, a capacidade de storage e o IOPS a qualquer momento.
+.. Opcionalmente, você pode especificar um valor de IOPS. Se você não especificar um valor de IOPS, o BlueXP  definirá um valor padrão com base em 3 IOPS por GiB da capacidade total inserida. Por exemplo, se você inserir 2000 GiB para a capacidade total e nenhum valor para o IOPS, o valor de IOPS efetivo será definido como 6000. Você pode alterar o valor de IOPS a qualquer momento.
++
+
+NOTE: Se você especificar um valor de IOPS que não atenda aos requisitos mínimos, receberá um erro ao adicionar o ambiente de trabalho.
+
+
+
+. *Revisão*
++
+.. Clique nos separadores para rever as propriedades do ONTAP, as propriedades do fornecedor e a configuração de rede.
+.. Clique em *anterior* para fazer alterações em qualquer configuração ou em *Adicionar* para aceitar as configurações e criar seu ambiente de trabalho.
+
+
+
+
+.Resultado
+O BlueXP  exibe a configuração do FSX for ONTAP no Canvas. Agora você pode adicionar volumes ao seu ambiente de trabalho no FSX for ONTAP usando o BlueXP .
+
+image:screenshot_add_fsx_cloud.png["Uma captura de tela do FSX for ONTAP na página ambientes de trabalho."]
+
+
+
+== Descubra um sistema de arquivos FSX for ONTAP existente
+
+Se você já forneceu suas credenciais da AWS para o BlueXP , *My ESTATE* pode descobrir e sugerir automaticamente os sistemas de arquivos FSX for ONTAP para adicionar e gerenciar usando o BlueXP . Você também pode revisar os serviços de dados disponíveis.
+
+.Sobre esta tarefa
+Você pode descobrir os sistemas de arquivos do FSX for ONTAP quando <<Crie um ambiente de trabalho no FSX for ONTAP>>você ou usando a página *My ESTATE*. Esta tarefa descreve a descoberta usando *My ESTATE*
+
+.Passos
+. No BlueXP , clique no separador *My ESTATE*.
+. A contagem de arquivos FSX para ONTAP descobertos é exibida. Clique em *Discover*.
++
+image:screenshot-opportunities.png["Uma captura de tela da página My ESTATE para o FSX for ONTAP."]
+
+. Selecione um ou mais sistemas de arquivos e clique em *Discover* para adicioná-los ao Canvas.
+
+
+[NOTE]
+====
+* Se selecionar um cluster sem nome, receberá uma mensagem para introduzir um nome para o cluster.
+* Se você selecionar um cluster que não tenha as credenciais necessárias para permitir que o BlueXP  gerencie o sistema de arquivos FSX for ONTAP, você receberá um prompt para selecionar credenciais com as permissões necessárias.
+
+
+====
+.Resultado
+O BlueXP  exibe seu sistema de arquivos FSX for ONTAP descoberto no Canvas. Agora você pode adicionar volumes ao seu ambiente de trabalho no FSX for ONTAP usando o BlueXP .
+
+image:screenshot_fsx_working_environment_select.png["Uma captura de tela da seleção da região da AWS e do ambiente de trabalho"]

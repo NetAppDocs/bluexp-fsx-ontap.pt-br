@@ -1,0 +1,125 @@
+---
+sidebar: sidebar 
+permalink: use/task-manage-fsx-volumes.html 
+keywords: fsx for ontap, fsx, aws, delete volumes, delete nfs volumes, delete cifs volumes, tiering policy, mount path, get mount path, mount volume, delete volumes, snapshots, edit volume, clone volume, clone 
+summary: Você pode gerenciar volumes, clones e snapshots e alterar as políticas de disposição em camadas do FSX for ONTAP usando o BlueXP . 
+---
+= Gerencie volumes para o FSX for ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode visualizar e gerenciar volumes, clones e snapshots, além de alterar as políticas de disposição em camadas do FSX for ONTAP usando o BlueXP .
+
+
+
+== Ver detalhes do volume
+
+Depois de criar um volume, você pode exibir os detalhes de configuração.
+
+. Abra o ambiente de trabalho.
++
+
+NOTE: Você pode passar o Mouse sobre o nome do volume para exibir o tipo de volume.
+
+. Abra a guia volume e selecione *Gerenciar volume* para abrir o menu *ações de volume*.
+. Selecione *Ver detalhes do volume*.
+
+
+
+
+== Editar volumes
+
+Depois de criar um volume, você pode modificá-lo a qualquer momento.
+
+.Passos
+. Abra o ambiente de trabalho.
+. Abra a guia volume e selecione *Gerenciar volume* para abrir o menu *ações de volume*.
+. Selecione *Editar definições de volume*.
+. Selecione *aplicar*.
+
+
+
+
+== Clonar volumes
+
+Depois de criar um volume, você pode criar um novo volume de leitura e gravação a partir de um novo Snapshot.
+
+.Passos
+. Abra o ambiente de trabalho.
+. Abra a guia volume e selecione *Gerenciar volume* para abrir o menu *ações de volume*.
+. Selecione *Clone o volume*.
+. Introduza um nome para o volume clonado.
+. Selecione *Clone*.
+
+
+
+
+== Gerenciar tags de volume
+
+Você pode adicionar, modificar ou excluir tags de volume. As tags adicionadas no BlueXP  são refletidas no Console de Gerenciamento da AWS. Pode levar até uma hora para sincronizar tags com o Console de Gerenciamento da AWS.
+
+
+NOTE: Você não pode editar as tags de volume criadas no BlueXP  até que elas sejam sincronizadas com a AWS. Isso pode levar até uma hora. Se a opção *Manage volume tags* estiver desabilitada, a AWS ainda não sincronizou as tags de volume.
+
+.Passos
+. Abra o ambiente de trabalho.
+. Abra a guia volume e selecione *Gerenciar volume* para abrir o menu *ações de volume*.
+. Selecione *Gerenciar etiquetas de volume*.
+. Selecione *Salvar* para aplicar suas alterações.
+
+
+
+
+== Gerenciar cópias Snapshot
+
+As cópias Snapshot fornecem uma cópia pontual do volume. Crie cópias Snapshot e restaure os dados para um novo volume.
+
+.Passos
+. Abra o ambiente de trabalho.
+. Abra a guia volume e selecione *Gerenciar volume* para abrir o menu *ações de proteção*.
+. Selecione uma das opções disponíveis para gerenciar cópias Snapshot:
++
+** *Criar uma cópia Snapshot*
+** *Restaurar a partir de uma cópia Snapshot*
+
+
+. Siga as instruções para concluir a ação selecionada.
+
+
+
+
+== Alterar a política de disposição em camadas
+
+Alterar a política de disposição em categorias do volume.
+
+.Passos
+. Abra o ambiente de trabalho.
+. Abra a guia volume e selecione *Gerenciar volume* para abrir o menu *ações avançadas*.
+. Selecione *alterar política de categorização*.
+. Selecione uma nova política de disposição em camadas de volume e clique em *alterar*.
+
+
+
+
+== Eliminar volumes
+
+Exclua os volumes que você não precisa mais.
+
+.Antes de começar
+Não é possível excluir um volume que anteriormente fazia parte de uma relação do SnapMirror usando o BlueXP . Os volumes do SnapMirror devem ser excluídos usando o Console de gerenciamento ou a CLI da AWS.
+
+.Passos
+. Abra o ambiente de trabalho.
+. Abra a guia volume e selecione *Gerenciar volume* para abrir o menu *ações de volume*.
+. Selecione *Eliminar o volume*.
+. Introduza o nome do ambiente de trabalho e confirme que pretende eliminar o volume. Pode demorar até uma hora até que o volume seja completamente removido do BlueXP .
+
+
+
+NOTE: Se você tentar excluir um volume clonado, você receberá um erro.

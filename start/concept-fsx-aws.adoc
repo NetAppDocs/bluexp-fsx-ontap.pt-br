@@ -1,0 +1,70 @@
+---
+sidebar: sidebar 
+permalink: start/concept-fsx-aws.html 
+keywords: Amazon FSx for NetApp ONTAP, volumes, aws, access key, secret key, cloud manager 
+summary: O Amazon FSX for NetApp ONTAP é um serviço totalmente gerenciado que permite que os clientes iniciem e executem sistemas de arquivos equipados com o sistema operacional de armazenamento ONTAP da NetApp. O FSX para ONTAP oferece os mesmos recursos, performance e funcionalidades administrativas que os clientes da NetApp usam no local hoje, com a simplicidade, agilidade, segurança e escalabilidade de um serviço AWS nativo. 
+---
+= Saiba mais sobre o Amazon FSX for NetApp ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["Amazon FSX para NetApp ONTAP"^] É um serviço totalmente gerenciado que permite que os clientes iniciem e executem sistemas de arquivos equipados com o sistema operacional de armazenamento NetApp ONTAP. O FSX para ONTAP oferece os mesmos recursos, performance e recursos administrativos que os clientes da NetApp usam no local, com a simplicidade, agilidade, segurança e escalabilidade de um serviço AWS nativo.
+
+
+
+== Caraterísticas
+
+* Não há necessidade de configurar ou gerenciar dispositivos de armazenamento, software ou backups.
+* Suporte para protocolos CIFS, iSCSI, NFSv3, NFSv4.x, https://docs.netapp.com/us-en/ontap/s3-config/ontap-version-support-s3-concept.html["S3"^] e SMB v2,0 - v3,1.1.
+* Capacidade de storage de dados praticamente ilimitada e de baixo custo usando a camada de storage disponível de acesso raro (IA).
+* Certificado para execução em aplicativos sensíveis à latência, incluindo Oracle RAC.
+* Opções de preços com pacote e pagamento conforme o uso.
+
+
+
+
+== Recursos adicionais no BlueXP
+
+* O FSX para ONTAP é suportado ao usar o BlueXP  no modo _standard_ ou _restrito_.
++
+** O modo padrão aproveita a camada SaaS do BlueXP  para fornecer funcionalidade completa.
+** O modo restrito está disponível para organizações que têm restrições de conetividade.
++
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Modos de implantação do BlueXP"^]Consulte para obter mais informações.
+
+
+
+* Usando link:https://docs.netapp.com/us-en/bluexp-family/["BlueXP"^] e um conector na AWS, você pode criar e gerenciar volumes, replicar dados e integrar o FSX for ONTAP com serviços de nuvem da NetApp, como classificação BlueXP  e cópia e sincronização do BlueXP .
+* Usando a tecnologia orientada por inteligência artificial (AI), a classificação do BlueXP  pode ajudar você a entender o contexto dos dados e identificar dados confidenciais que residem em suas contas do FSX for ONTAP. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Saiba mais"^].
+* Com o uso da cópia e sincronização do BlueXP , você pode automatizar a migração de dados para qualquer destino na nuvem ou no local. https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["Saiba mais"^]
+
+
+
+
+== Custo
+
+Sua conta no FSX for ONTAP é mantida pela AWS e não pela BlueXP . Consulte a https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["Guia de introdução ao Amazon FSX for NetApp ONTAP"^].
+
+Há um custo adicional associado ao uso do conetor na AWS e aos serviços de dados opcionais, como cópia e sincronização BlueXP  e classificação BlueXP .
+
+
+
+== Regiões suportadas
+
+https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["Exibir regiões da Amazon compatíveis."^]
+
+
+
+== Obter ajuda
+
+O Amazon FSX for NetApp ONTAP é uma solução exclusiva da AWS. Para dúvidas ou problemas de suporte técnico associados ao ONTAP sistema de arquivos, infraestrutura ou qualquer solução usando este serviço, use a Central de suporte no Console de Gerenciamento da AWS para abrir um caso de suporte com a AWS. Selecione o serviço "FSX for ONTAP" e a categoria apropriada. Forneça as informações restantes necessárias para criar seu caso de suporte da AWS.
+
+Para dúvidas gerais sobre soluções e serviços de storage da BlueXP  ou BlueXP , você pode começar com o bate-papo on-line do BlueXP .
+
+Para problemas de suporte técnico específicos das soluções e serviços de storage da BlueXP  ou BlueXP , é possível abrir um ticket de suporte da NetApp usando o número de série do nível da organização da BlueXP . Você precisará link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/support/task-support-registration.html["Registe a sua organização BlueXP "^]ativar o suporte.

@@ -1,0 +1,151 @@
+---
+sidebar: sidebar 
+permalink: requirements/task-setting-up-permissions-fsx.html 
+keywords: fsx for ontap, iam, user role, permissions, aws govcloud, govcloud, credentials 
+summary: Para criar ou gerenciar um ambiente de trabalho do FSX for ONTAP, você precisa adicionar credenciais da AWS ao BlueXP  fornecendo o ARN de uma função do IAM que dá ao BlueXP  as permissões necessárias para criar um ambiente de trabalho do FSX for ONTAP. 
+---
+= Configurar permissões para o FSX for ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para criar ou gerenciar um ambiente de trabalho do FSX for ONTAP, você precisa adicionar credenciais da AWS ao BlueXP  fornecendo o ARN de uma função do IAM que dá ao BlueXP  as permissões necessárias para criar um ambiente de trabalho do FSX for ONTAP.
+
+
+
+== Configure a função do IAM
+
+Configure uma função do IAM que permita que o BlueXP  assuma a função.
+
+.Passos
+. Vá para o console do IAM na conta de destino.
+. Conceda acesso à BlueXP  à conta da AWS. Em Gerenciamento de Acesso, clique em *funções > criar função* e siga as etapas para criar a função.
++
+** Em *tipo de entidade confiável*, selecione *conta AWS*.
+** Selecione *outra conta da AWS* e insira o BlueXP  *ID da conta*:
++
+*** Para BlueXP  SaaS: 952013314444
+*** Para AWS GovCloud (EUA): 033442085313
++
+
+NOTE: Para maior segurança, sugerimos que você especifique um link:https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html["_ID externa_"^]. Para acessar sua conta da AWS, o BlueXP  terá que fornecer a função ARN (nome de recurso da Amazon) e a ID externa especificada. Isto impede o link:https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html["confundiu o problema do deputado"^].
+
+
+
+
+
+. Crie uma política que inclua as seguintes permissões mínimas exigidas e permissões opcionais, conforme necessário.
++
+[role="tabbed-block"]
+====
+.Permissões necessárias
+--
+As permissões mínimas a seguir são necessárias para permitir que o BlueXP  crie seu sistema de arquivos FSX for NetApp ONTAP.
+
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "fsx:*",
+                "ec2:Describe*",
+                "ec2:CreateTags",
+                "iam:CreateServiceLinkedRole",
+                "kms:Describe*",
+                "kms:List*",
+                "kms:CreateGrant"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+----
+--
+.Capacidade automática
+--
+As seguintes permissões adicionais são necessárias para ativar link:../use/task-manage-working-environment.html["gerenciamento automático de capacidade"]o .
+
+[source, json]
+----
+"cloudwatch:GetMetricData",
+"cloudwatch:GetMetricStatistics"
+----
+--
+.Grupos de segurança
+--
+As seguintes permissões adicionais são necessárias para permitir que o BlueXP  o link:../use/task-creating-fsx-working-environment.html["gerar grupos de segurança"].
+
+[source, json]
+----
+"ec2:AuthorizeSecurityGroupEgress",
+"ec2:AuthorizeSecurityGroupIngress",
+"ec2:RevokeSecurityGroupEgress",
+"ec2:RevokeSecurityGroupIngress",
+"ec2:CreateSecurityGroup",
+"ec2:DeleteSecurityGroup",
+"cloudformation:CreateStack",
+"cloudformation:ValidateTemplate",
+"cloudformation:DescribeStacks",
+"cloudformation:DescribeStackEvents"
+----
+--
+====
+. Copie a função ARN da função IAM para que você possa colá-la no BlueXP  na próxima etapa.
+
+
+.Resultado
+A função do IAM agora tem as permissões necessárias.
+
+
+
+== Adicione as credenciais
+
+Depois de fornecer a função IAM com as permissões necessárias, adicione a função ARN ao BlueXP .
+
+.Antes de começar
+Se você acabou de criar a função do IAM, aguarde alguns minutos para que as novas credenciais fiquem disponíveis.
+
+.Passos
+. No canto superior direito do console BlueXP , clique no ícone Configurações e selecione *credenciais*.
++
+image:screenshot_settings_icon.gif["Uma captura de tela que mostra o ícone Configurações no canto superior direito do console BlueXP ."]
+
+. Clique em *Adicionar credenciais* e siga as etapas do assistente.
++
+.. *Localização das credenciais*: Selecione *Serviços da Amazon Web > BlueXP *.
+.. *Definir credenciais*: Forneça um nome *Credentials* e *Role ARN* e *External ID* (se especificado) que você criou quando <<Configure a função do IAM>>você .
++
+[NOTE]
+====
+*** Se você usar uma conta do AWS GovCloud (EUA), marque *Eu uso uma conta do AWS GovCloud (EUA)*.
++
+image:screenshot-govcloud-checkbox.png["Uma captura de tela da caixa de seleção da conta GovCloud (EUA)."]
+
+*** A autenticação usando o AWS GovCloud desativará a plataforma SaaS. Esta é uma alteração permanente na sua conta e não pode ser desfeita.
+
+
+====
+.. *Revisão*: Confirme os detalhes sobre as novas credenciais e clique em *Adicionar*.
+
+
+
+
+.Resultado
+Agora você pode usar as credenciais ao criar um ambiente de trabalho do FSX for ONTAP.
+
+
+
+== Links relacionados
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-accounts-aws.html["Credenciais e permissões da AWS"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Gerenciamento de credenciais da AWS para BlueXP "^]
+
