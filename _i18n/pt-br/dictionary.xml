@@ -661,7 +661,6 @@
   <block id="9123b1a896e43bd47ae8708d015514ba" category="section-title">Gerenciar a capacidade automática</block>
   <block id="1c05e31e27d15b210cdcb01d01331c36" category="paragraph">Você pode optar por habilitar o gerenciamento automático de capacidade para adicionar storage incremental com base na demanda. O gerenciamento automático de capacidade faz polling no cluster em intervalos regulares para avaliar a demanda e aumenta automaticamente a capacidade de armazenamento em incrementos de 10% até 80% da capacidade máxima do cluster.</block>
   <block id="0b77a63f8ac25e1cd8509e906523f459" category="inline-link-macro">crie um ambiente de trabalho</block>
-  <block id="0185df25abbf3744285dd03ec2704b86" category="admonition">Se você não especificar manualmente um valor de IOPS ao criar o ambiente de trabalho, o BlueXP  aumentará o IOPS em 3 por GiB da nova capacidade total. Se você especificou um valor de IOPS, o BlueXP  não ajustará o IOPS. Para obter detalhes sobre como configurar o IOPS, <block ref="54a688b79e41730a76924297f5ac42a6" category="inline-link-macro-rx"></block>consulte .</block>
   <block id="baf936091e5717d22f9c2b2ccee10188" category="paragraph">O gerenciamento automático de capacidade está desativado por padrão. Você pode gerenciar a capacidade automática com ou sem um conetor ativo na AWS.</block>
   <block id="2ccb2d581067f0eac436a078317d136d" category="section-title">Gerencie a capacidade automática sem um conetor ativo</block>
   <block id="13c4ac4dcec1decf7e36eed04316808f" category="paragraph">Você pode gerenciar a capacidade automática sem um conetor ativo na AWS.</block>
@@ -820,4 +819,5 @@
   <block id="7aa1575aeeddba65d55707b41584cd4a" category="sidebar">Use o Amazon FSX para NetApp ONTAP</block>
   <block id="6faf2fd9ba5b0e89a953f43cd89d6c46" category="sidebar">Gerenciar um ambiente de trabalho</block>
   <block id="e2439a8512b353f75391ba9c346bc84d" category="sidebar">Gerenciar volumes</block>
+  <block id="6c6cfde7c92a73ae5e1266396d6657d9" category="admonition">Se você não especificar manualmente um valor de IOPS ao criar o ambiente de trabalho, o BlueXP  aumentará o IOPS em 3 por GiB da nova capacidade total. Se você especificou um valor de IOPS, o BlueXP  não ajustará o IOPS. Para obter detalhes sobre como configurar o IOPS, <block ref="a0c1e5541590cfd29c35eef67f286e58" category="inline-link-macro-rx"></block>consulte .</block>
 </blocks>

@@ -23,7 +23,7 @@ O BlueXP  permite que você gerencie seu ambiente de trabalho no FSX for ONTAP.
 Você pode optar por habilitar o gerenciamento automático de capacidade para adicionar storage incremental com base na demanda. O gerenciamento automático de capacidade faz polling no cluster em intervalos regulares para avaliar a demanda e aumenta automaticamente a capacidade de armazenamento em incrementos de 10% até 80% da capacidade máxima do cluster.
 
 
-NOTE: Se você não especificar manualmente um valor de IOPS ao criar o ambiente de trabalho, o BlueXP  aumentará o IOPS em 3 por GiB da nova capacidade total. Se você especificou um valor de IOPS, o BlueXP  não ajustará o IOPS. Para obter detalhes sobre como configurar o IOPS, link:task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-ontap-working-environment["crie um ambiente de trabalho"]consulte .
+NOTE: Se você não especificar manualmente um valor de IOPS ao criar o ambiente de trabalho, o BlueXP  aumentará o IOPS em 3 por GiB da nova capacidade total. Se você especificou um valor de IOPS, o BlueXP  não ajustará o IOPS. Para obter detalhes sobre como configurar o IOPS, link:task-creating-fsx-working-environment.html["crie um ambiente de trabalho"]consulte .
 
 O gerenciamento automático de capacidade está desativado por padrão. Você pode gerenciar a capacidade automática com ou sem um conetor ativo na AWS.
 
