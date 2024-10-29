@@ -743,59 +743,43 @@
   <block id="a018fc35c6be59c0e9c90d4bd464dc47" category="section-title">07 de maio de 2023</block>
   <block id="b3aad9775f9ce61fe67c9745594b96f0" category="inline-link-macro">gerar um grupo de segurança</block>
   <block id="beee5e54063eb4d710db752896c928c8" category="inline-link-macro">requer permissões adicionais</block>
-  <block id="b6f1ebb155eaf4c6e07d7a105b1d5a53" category="list-text">Ao criar um ambiente de trabalho, agora você pode ter o BlueXP  <block ref="3ba2cfc3ef2a3c163fc4910682cfb7d6" category="inline-link-macro-rx"></block>que permite o tráfego somente na VPC selecionada. Este recurso <block ref="097f8dd60847dad6062ac7ea2bd09c06" category="inline-link-macro-rx"></block>.</block>
   <block id="34ec78fcc91ffb1e54cd85e4a0924332" category="inline-link-macro">adicionar</block>
   <block id="8f45a2644508b5282f57fe129f62d19a" category="inline-link-macro">modificar</block>
-  <block id="46ce6a634ad58fa667690e7f5c151b26" category="list-text">Você pode opcionalmente <block ref="2af1713063b9a7e50c1f5e13c7671bae" category="inline-link-macro-rx"></block> e <block ref="013335dc35ce07c311c673e8a99c88f9" category="inline-link-macro-rx"></block> tags para categorizar volumes.</block>
   <block id="88c49608e723add593f5becc8bd9a968" category="section-title">02 de abril de 2023</block>
   <block id="9af9b754c1d16f271c1e6f4b1b2c4f4d" category="paragraph">O limite de IOPS é aumentado para permitir o provisionamento manual ou automático de até 160.000 PB.</block>
   <block id="eea1e3b9ecdd5e32692761a0a78b9463" category="section-title">05 de março de 2023</block>
   <block id="3aea41413b60d0894823e739f01efcbb" category="paragraph">Melhorias na interface do usuário foram feitas e capturas de tela foram atualizadas na documentação.</block>
   <block id="5a0c953dba56aa463b4468d70bfc3feb" category="section-title">01 de janeiro de 2023</block>
-  <block id="5acc19c1ac9cb4ec703f692929b77d4f" category="paragraph">Agora você pode optar por habilitar a <block ref="798ae2d54008eb1f5d42a000af614a06" category="inline-link-macro-rx"></block>adicionar storage incremental com base na demanda. O gerenciamento automático de capacidade faz polling no cluster em intervalos regulares para avaliar a demanda e aumenta automaticamente a capacidade de armazenamento em incrementos de 10% até 80% da capacidade máxima do cluste.</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">18 de setembro de 2022</block>
   <block id="3abe9a67eae0ad33b1c96ff4ae8b1eaa" category="inline-link-macro">Alterar a capacidade de storage e o IOPS</block>
-  <block id="8b5edcd6e9d4ab9285ee3664af7ea2a9" category="paragraph">Agora você pode <block ref="9b7f213d695f8dd25ea908078792fd69" category="inline-link-macro-rx"></block>a qualquer momento depois de criar o ambiente de trabalho do FSX for ONTAP.</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">31 de julho de 2022</block>
   <block id="8427e95422b20518ebfdf9669981c983" category="list-text">Se você já forneceu suas credenciais da AWS para o Cloud Manager, o novo recurso *My ESTATE* pode descobrir e sugerir automaticamente os sistemas de arquivos FSX for ONTAP para adicionar e gerenciar usando o Cloud Manager. Você também pode rever os serviços de dados disponíveis através da guia *My ESTATE*.</block>
   <block id="690df0feee64ee1dfd9e2fabd3bd7196" category="inline-link-macro">Descubra o FSX para ONTAP usando o My ESTATE</block>
-  <block id="3126d0bb3bdeb0d61fd04be8640e4d8e" category="paragraph"><block ref="3126d0bb3bdeb0d61fd04be8640e4d8e" category="inline-link-macro-rx"></block></block>
   <block id="e2399171d04de4904bc9ceb3e1c97260" category="inline-link-macro">alterar a capacidade de taxa de transferência</block>
-  <block id="733ef426ec092c634a1b7dbaf3373220" category="list-text">Agora você pode <block ref="9152528a95687d317ab62dcde238fdef" category="inline-link-macro-rx"></block>a qualquer momento depois de criar o ambiente de trabalho do FSX for ONTAP.</block>
   <block id="7699be7c50b8640b313d71cce9004797" category="inline-link-macro">replique e sincronize dados</block>
-  <block id="32417d8e9e3c82c4c5314062782575c9" category="list-text">Agora você pode <block ref="f635c46f2cd088dcf1369f807e47e94f" category="inline-link-macro-rx"></block>acessar os sistemas no local e outros FSX para ONTAP usando o FSX for ONTAP como fonte.</block>
   <block id="42c82b44ceecde8407f75a70409e2aec" category="inline-link-macro">Crie volumes iSCSI no FSX para ONTAP usando o Cloud Manager</block>
-  <block id="9f4e04fb3f0860f8350f8ebb5e3a6709" category="list-text">Agora você pode <block ref="2e2cc205fa7502696c4503aa2708460c" category="inline-link-macro-rx"></block>.</block>
   <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">3 de julho de 2022</block>
   <block id="f0e3a414b681f7ab90a3f742f40c9365" category="list-text">Agora você pode selecionar um modelo de implantação de HA de zona de disponibilidade única ou múltipla.</block>
-  <block id="8fd7534d6aebbd882ef1960f77315b2f" category="paragraph"><block ref="8fd7534d6aebbd882ef1960f77315b2f" category="inline-link-macro-rx"></block></block>
   <block id="1d83e69fc7f9ed326713517b984b155b" category="list-text">A autenticação de conta do AWS GovCloud agora é compatível com o Cloud Manager.</block>
-  <block id="e6d0f7e4f8ca7981e7941ccbbb8a1a64" category="paragraph"><block ref="e6d0f7e4f8ca7981e7941ccbbb8a1a64" category="inline-link-macro-rx"></block></block>
   <block id="ba26e4556a0f160834687982b0479336" category="section-title">27 de fevereiro de 2022</block>
   <block id="3152521594c71809f9c72383294b05b7" category="section-title">Assuma a função do IAM</block>
   <block id="1bae6acf64b673783a7e55db59c7f74e" category="paragraph">Quando você cria um ambiente de trabalho do FSX for ONTAP, agora você precisa fornecer o ARN de uma função do IAM que o Cloud Manager pode assumir para criar um ambiente de trabalho do FSX for ONTAP. Anteriormente, você precisava fornecer chaves de acesso da AWS.</block>
   <block id="f63d604edef29843d35ad367e0d82814" category="inline-link-macro">Saiba como configurar permissões para o FSX for ONTAP</block>
-  <block id="a192906bb862e862bbb53506559a844d" category="paragraph"><block ref="9516e987fbb53ba186cfd7cef3866a34" category="inline-link-macro-rx"></block>.</block>
   <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">31 de outubro de 2021</block>
   <block id="5b80dcfe3dbe5a2279a764bb895220e8" category="section-title">Crie volumes iSCSI usando a API do Cloud Manager</block>
   <block id="c9901681b19037cfe4d776eb572a7a6b" category="paragraph">Você pode criar volumes iSCSI para o FSX for ONTAP usando a API do Cloud Manager e gerenciá-los em seu ambiente de trabalho.</block>
   <block id="1b06c7a9314e682b34302ac90d6d6650" category="section-title">Selecione unidades de volume ao criar volumes</block>
   <block id="155385bf6757f064143eb321fbfd3bff" category="inline-link-macro">Selecione unidades de volume (GiB ou TIB) ao criar volumes</block>
-  <block id="a9736f093d873bda23fae5af0f2e59ad" category="paragraph">Você pode <block ref="86859984b3fe2a3db500ca938508fd38" category="inline-link-macro-rx"></block>no FSX for ONTAP.</block>
   <block id="d1c47d8bf748c203ff983262e6c108cb" category="section-title">4 de outubro de 2021</block>
   <block id="2ac9dc8f932fa4bebfc31724e388e13a" category="section-title">Crie volumes CIFS usando o Cloud Manager</block>
   <block id="901f92bd8486511c3943b59dd9b9f6a4" category="inline-link-macro">Crie volumes CIFS no FSX para ONTAP usando o Cloud Manager</block>
-  <block id="7c0b6ff49cfe71493375c14aa404ca6c" category="paragraph">Agora você pode <block ref="52b661a6eadedcae5186a4ebf8b872ae" category="inline-link-macro-rx"></block>.</block>
   <block id="1664cbd7cbe0abbcd6d133e652cd42c1" category="section-title">Edite volumes usando o Cloud Manager</block>
   <block id="7a6930a21ad40feae487321aef61a969" category="inline-link-macro">Edite o FSX para ONTAP volumes usando o Cloud Manager</block>
-  <block id="9fb5d20591c6848f132647679c0da362" category="paragraph">Agora você pode <block ref="89079ccbf05a0fc2ea3954d0d79bc38f" category="inline-link-macro-rx"></block>.</block>
   <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2 de setembro de 2021</block>
   <block id="f65bfe10577ea64b648eddd04f107545" category="section-title">Suporte para o Amazon FSX for NetApp ONTAP</block>
   <block id="ee0913f891047fad10e625ab9754d92d" category="list-text"><block ref="9b424e413e3d5660d5b403cf87df1eb5" category="inline-link-macro-rx"></block> É um serviço totalmente gerenciado que permite que os clientes iniciem e executem sistemas de arquivos equipados com o sistema operacional de armazenamento ONTAP da NetApp. O FSX para ONTAP oferece os mesmos recursos, performance e recursos administrativos que os clientes da NetApp usam no local, com a simplicidade, agilidade, segurança e escalabilidade de um serviço AWS nativo.</block>
-  <block id="557b3fb1f758926ca04bd11d6807c299" category="paragraph"><block ref="834ff3a562756e0b7e56a13f4eb96013" category="inline-link-macro-rx"></block>.</block>
   <block id="9d2704a937df8ec429bf2446953b2687" category="list-text">Você pode configurar um ambiente de trabalho do FSX for ONTAP no Cloud Manager.</block>
   <block id="154f5271f725905c77563d2d1d8b3a0a" category="inline-link-macro">Crie um ambiente de trabalho do Amazon FSX for NetApp ONTAP</block>
-  <block id="d08ad840d921084daab3eb8ec7ed95d0" category="paragraph"><block ref="1e975261e8c6330d82170a203547fafa" category="inline-link-macro-rx"></block>.</block>
   <block id="7965f44d9657c905774d8d427141b845" category="list-text">Usando um conector na AWS e no Cloud Manager, você pode criar e gerenciar volumes, replicar dados e integrar o FSX for ONTAP com serviços de nuvem da NetApp, como Data Sense e Cloud Sync.</block>
   <block id="c8b596b90101edd9745fcaebc95d3b53" category="inline-link-macro">Comece a usar o Cloud Data Sense para o Amazon FSX for NetApp ONTAP</block>
   <block id="9392a234f812a64a7add82bf3ea440ce" category="paragraph"><block ref="6c403399a6912b636ecf2c35a037d6c1" category="inline-link-macro-rx"></block>.</block>
@@ -820,4 +804,34 @@
   <block id="6faf2fd9ba5b0e89a953f43cd89d6c46" category="sidebar">Gerenciar um ambiente de trabalho</block>
   <block id="e2439a8512b353f75391ba9c346bc84d" category="sidebar">Gerenciar volumes</block>
   <block id="6c6cfde7c92a73ae5e1266396d6657d9" category="admonition">Se você não especificar manualmente um valor de IOPS ao criar o ambiente de trabalho, o BlueXP  aumentará o IOPS em 3 por GiB da nova capacidade total. Se você especificou um valor de IOPS, o BlueXP  não ajustará o IOPS. Para obter detalhes sobre como configurar o IOPS, <block ref="a0c1e5541590cfd29c35eef67f286e58" category="inline-link-macro-rx"></block>consulte .</block>
+  <block id="c0fde7a894f20194ba5123471f8cf7e7" category="doc">Hora de início da janela de manutenção</block>
+  <block id="12ad4af5f024e558448bad702ec7ef28" category="section-title">Distribuir dados de volume usando FlexGroups</block>
+  <block id="c63d5220743c53eaddaae4ea5f0511e7" category="section-title">**A aba Minhas oportunidades** agora é **minha propriedade**</block>
+  <block id="479422755a82da93d381b0baab5f8fe7" category="doc">Suporte para três regiões adicionais</block>
+  <block id="e2be93aaa649a645aba11243985c766e" category="section-title">Gerar um grupo de segurança</block>
+  <block id="aad99a875ad0c9448b68c1367f655aa5" category="paragraph">Ao criar um ambiente de trabalho, agora você pode ter o BlueXP  <block ref="2dcc7fe33dfc1ec3c2553fdd253353e0" category="inline-link-macro-rx"></block>que permite o tráfego somente na VPC selecionada. Este recurso <block ref="4e98d12e63c5c0720c845cda898d916d" category="inline-link-macro-rx"></block>.</block>
+  <block id="5fd8323487c8b69df76423b19fd7e929" category="section-title">Adicionar ou modificar tags</block>
+  <block id="6f4442b553244ce52c784cc52f701d4b" category="paragraph">Você pode opcionalmente <block ref="d78637da2799ddfac5dd66dca8e7ea18" category="inline-link-macro-rx"></block> e <block ref="4a85f9a70555f38d50391396eef17875" category="inline-link-macro-rx"></block> tags para categorizar volumes.</block>
+  <block id="54bbdb510ae0f695a97b35e9620b2429" category="section-title">Aumento no limite de IOPS</block>
+  <block id="6a017cfe14e32a2ecb3b562a6905c135" category="section-title">Interface do utilizador melhorada</block>
+  <block id="f2be69b635c39988351f6636a52c66bd" category="section-title">Gerenciamento automático de capacidade</block>
+  <block id="77b6a90689811f67cc803249dffcf057" category="paragraph">Agora você pode optar por habilitar a <block ref="1ad077b1d76451dcea34a865ef72a4a2" category="inline-link-macro-rx"></block>adicionar storage incremental com base na demanda. O gerenciamento automático de capacidade faz polling no cluster em intervalos regulares para avaliar a demanda e aumenta automaticamente a capacidade de armazenamento em incrementos de 10% até 80% da capacidade máxima do cluster.</block>
+  <block id="45d8831f16b41217c4087275e351f716" category="paragraph">Agora você pode <block ref="5a81e5cffb3de2e4ff731d59ff35b987" category="inline-link-macro-rx"></block>a qualquer momento depois de criar o ambiente de trabalho do FSX for ONTAP.</block>
+  <block id="ca9bb4e7ad7b9dd541f6f55e7b321568" category="section-title">*Minha propriedade* recurso</block>
+  <block id="0d984c201ccfc0cec47c6e9aaaa3548c" category="paragraph"><block ref="0d984c201ccfc0cec47c6e9aaaa3548c" category="inline-link-macro-rx"></block></block>
+  <block id="9b453da7e373871ff96466f7161324e9" category="paragraph">Agora você pode <block ref="0dcb65269029cdd4c021d02aa3f3aa08" category="inline-link-macro-rx"></block>a qualquer momento depois de criar o ambiente de trabalho do FSX for ONTAP.</block>
+  <block id="016049d3662ab4f0c21871ed98f2bb37" category="section-title">Replique e sincronize dados</block>
+  <block id="de33755c2f05576d068c86206230329a" category="paragraph">Agora você pode <block ref="c82ac41f9f49c13c94f808bac3165e62" category="inline-link-macro-rx"></block>acessar os sistemas no local e outros FSX para ONTAP usando o FSX for ONTAP como fonte.</block>
+  <block id="747d46ff7f4432b15fb87d52f7f0ff2a" category="section-title">Criar volume iSCSI</block>
+  <block id="fd8c9e37d8db8d27c7b235d307673cf7" category="paragraph">Agora você pode <block ref="7edfce83a1793d1d9bff25243a609f09" category="inline-link-macro-rx"></block>.</block>
+  <block id="d79900702dea0a3cbd86163202f91f3a" category="section-title">Suporte para Zon de disponibilidade única ou múltipla</block>
+  <block id="abe867b96960cc2af1f7063ddfd2ca6d" category="paragraph"><block ref="abe867b96960cc2af1f7063ddfd2ca6d" category="inline-link-macro-rx"></block></block>
+  <block id="4869939e49d1dbdd540bc87d62436a3f" category="section-title">Suporte para autenticação de conta GovCloud</block>
+  <block id="994f04734d0bda22f0c527103d6be0c9" category="paragraph"><block ref="994f04734d0bda22f0c527103d6be0c9" category="inline-link-macro-rx"></block></block>
+  <block id="5b258d27d1686d8aff26c4da65f8b510" category="paragraph"><block ref="1b53e429ea3df93a4ea7e25c176ae236" category="inline-link-macro-rx"></block>.</block>
+  <block id="61dbf7cf47d95446655246c97325220f" category="paragraph">Você pode <block ref="37652122d4cb2db6a33d92a8bdf313a9" category="inline-link-macro-rx"></block>no FSX for ONTAP.</block>
+  <block id="7bbd999550cefc7b5baa6a41c10035c1" category="paragraph">Agora você pode <block ref="fcf5732b84f39115bb7eec912809d959" category="inline-link-macro-rx"></block>.</block>
+  <block id="c3907d3f6c877cb2a043b5a4fbee371b" category="paragraph">Agora você pode <block ref="a480e52e1eed28b86151e9db4a30d9fb" category="inline-link-macro-rx"></block>.</block>
+  <block id="b1be7e05c9b9a6323c9057ee75d0c768" category="paragraph"><block ref="8b96268d04548ada8a46317048a75d5d" category="inline-link-macro-rx"></block>.</block>
+  <block id="9d2d8ed54095e2ac19a91e1fafd44dab" category="paragraph"><block ref="78c1bb33bbb453f41ca8a4b947f8849c" category="inline-link-macro-rx"></block>.</block>
 </blocks>
