@@ -20,9 +20,9 @@ link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["A
 
 == Usando o FSX para ONTAP no BlueXP 
 
-No BlueXP  Canvas, você pode criar e descobrir os ambientes de trabalho do FSX for ONTAP, usar o Gerenciador de sistema e outros serviços do BlueXP  e visualizar credenciais. Se, em vez disso, você quiser gerenciar credenciais e cargas de trabalho que usam os sistemas de arquivos do FSX for ONTAP, https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Carga de trabalho de fábrica da BlueXP "^] use o .
+Na tela do BlueXP , você pode criar e descobrir os ambientes de trabalho do FSX for ONTAP e usar o Gerenciador de sistema e outros serviços do BlueXP . Se você quiser gerenciar ambientes de trabalho e cargas de trabalho do FSX for ONTAP executados no Amazon FSX for NetApp ONTAP, https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Carga de trabalho de fábrica da BlueXP "^] use o .
 
-link:../use/task-creating-fsx-working-environment.html["Saiba mais sobre como usar o FSX for ONTAP no BlueXP "^].
+link:../use/task-creating-fsx-working-environment.html["Saiba como criar e descobrir os ambientes de trabalho do FSX for ONTAP no BlueXP "^].
 
 
 
@@ -39,7 +39,7 @@ link:../use/task-creating-fsx-working-environment.html["Saiba mais sobre como us
 
 == Recursos adicionais no BlueXP
 
-* O FSX para ONTAP é suportado ao usar o BlueXP  no modo _standard_, que aproveita a camada BlueXP  SaaS para fornecer funcionalidade completa.
+* O FSX para ONTAP é suportado ao usar o BlueXP  no modo _standard_, que aproveita a camada BlueXP  SaaS para fornecer funcionalidade completa. O modo _restrito_ e o modo _privado_ não são suportados.
 +
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Modos de implantação do BlueXP"^]Consulte para obter mais informações.
 
@@ -53,6 +53,19 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Modos 
 == Os conetores e links desbloqueiam todos os recursos do FSX for ONTAP
 
 Os conetores e links permitem conetividade e relações de confiança entre os ambientes de trabalho do BlueXP  e do Amazon FSX for NetApp ONTAP. Um BlueXP  Connector é um software NetApp executado na nuvem ou na rede local e um link usa o AWS Lambda para executar o código NetApp. Você não precisa de um conetor ou link para começar a usar o BlueXP  ou criar ambientes de trabalho do FSX for ONTAP, mas você precisa usar um conetor ou link para usar todos os recursos do FSX for ONTAP.
+
+Você precisa de um conetor ou link para usar os seguintes recursos:
+
+* Exiba a versão do ONTAP que está instalada em um sistema de arquivos FSX for ONTAP
+* Gerir volumes iSCSI no sistema
+* Ative e desative o recurso de crescimento automático para volumes
+* Criar e gerenciar políticas de snapshot
+* Configurar relações de replicação e replicar volumes entre sistemas de arquivos
+* Configurar relações de backup e fazer backup dos dados de volume no storage de nuvem
+* Clonar volumes dentro de um sistema de arquivos
+* Exibir métricas adicionais diretamente do ONTAP (as métricas padrão são coletadas pelo Amazon CloudWatch)
+* Gerenciamento de políticas de exportação de NFS
+
 
 Saiba mais sobre conetores e links e quando você deve usá-los:
 
@@ -78,7 +91,7 @@ https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services
 
 == Obter ajuda
 
-O Amazon FSX for NetApp ONTAP é uma solução exclusiva da AWS. Para dúvidas ou problemas de suporte técnico associados ao ONTAP ambiente de trabalho, infraestrutura ou qualquer solução usando este serviço, use a Central de suporte no Console de Gerenciamento da AWS para abrir um caso de suporte com a AWS. Selecione o serviço "FSX for ONTAP" e a categoria apropriada. Forneça as informações restantes necessárias para criar seu caso de suporte da AWS.
+O Amazon FSX for NetApp ONTAP é uma solução exclusiva da AWS. Para dúvidas ou problemas de suporte técnico associados ao ONTAP sistema de arquivos, infraestrutura ou qualquer solução usando este serviço, use a Central de suporte no Console de Gerenciamento da AWS para abrir um caso de suporte com a AWS. Selecione o serviço "FSX for ONTAP" e a categoria apropriada. Forneça as informações restantes necessárias para criar seu caso de suporte da AWS.
 
 Para dúvidas gerais sobre soluções e serviços de storage da BlueXP  ou BlueXP , você pode começar com o bate-papo on-line do BlueXP .
 

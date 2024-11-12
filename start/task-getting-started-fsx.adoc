@@ -20,19 +20,17 @@ Comece a usar o Amazon FSX for NetApp ONTAP no BlueXP  adicionando credenciais,
 [role="quick-margin-para"]
 A adição de credenciais da AWS é necessária para fornecer ao BlueXP  as permissões necessárias para criar e gerenciar os sistemas de arquivos do FSX for ONTAP. Você pode escolher entre _Automate Permissions_ e _read Permissions_.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Três"] Crie um conetor ou um link
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dois"] Opcional: Crie um conetor ou um link
 [role="quick-margin-para"]
-Você precisa de um BlueXP  Connector ou de um link de fábrica de carga de trabalho do BlueXP  para gerenciar um sistema de arquivos FSX for ONTAP.
-
-[role="quick-margin-para"]
-Um _Connector_ é uma máquina virtual que você implanta em sua VPC para gerenciar seus sistemas de arquivos FSX for ONTAP. Um _link_ utiliza o AWS Lambda para criar uma relação de confiança e conetividade com seus sistemas de arquivos FSX for ONTAP.
+Para executar algumas tarefas de gerenciamento do BlueXP , você precisa de um BlueXP  Connector ou de um link de fábrica do workload do BlueXP . Um _Connector_ é uma máquina virtual que você implanta em sua VPC para gerenciar seus sistemas de arquivos FSX for ONTAP. Um _link_ utiliza o AWS Lambda para criar uma relação de confiança e conetividade com seus sistemas de arquivos FSX for ONTAP.
 
 [role="quick-margin-list"]
+* link:../start/concept-fsx-aws.html#connectors-and-links-unlock-all-fsx-for-ontap-features["Saiba quando um conetor ou link é necessário para o gerenciamento do FSX for ONTAP"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-aws.html["Saiba como criar um conetor na AWS"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Saiba como criar um conetor no local"^]
 * https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["Saiba como criar um link"^]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Dois"] link:../use/task-creating-fsx-working-environment.html["Crie ou descubra um ambiente de trabalho do FSX for ONTAP"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Três"] link:../use/task-creating-fsx-working-environment.html["Crie ou descubra um ambiente de trabalho do FSX for ONTAP"]
 [role="quick-margin-para"]
 Crie seu sistema de arquivos FSX for ONTAP diretamente do BlueXP  ou descubra um sistema de arquivos que você já criou em seu ambiente AWS.

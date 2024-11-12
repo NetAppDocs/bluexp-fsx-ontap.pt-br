@@ -30,7 +30,7 @@ A interface de fábrica do workload fornece aos usuários do BlueXP  opções p
 
 == Sobre esta tarefa
 
-Ao adicionar novas credenciais para o FSX for ONTAP da fábrica de carga de armazenamento no BlueXP , você precisará decidir em que nível de permissões, ou _modo operacional_, você gostaria de operar. Para descobrir e implantar recursos da AWS, como o FSX for ONTAP, você precisará de permissões _read_ ou _automate_. O BlueXP  FSX for ONTAP funcionará no modo _básico_, a menos que você selecione o modo _read_ ou o modo _Automate_. link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html.html["Saiba mais sobre os modos operacionais"].
+Ao adicionar novas credenciais para o FSX for ONTAP da fábrica de carga de armazenamento no BlueXP , você precisará decidir em que nível de permissões, ou _modo operacional_, você gostaria de operar. Para descobrir e implantar recursos da AWS, como o FSX for ONTAP, você precisará de permissões _read_ ou _automate_. O BlueXP  FSX for ONTAP funcionará no modo _básico_, a menos que você selecione o modo _read_ ou o modo _Automate_. link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["Saiba mais sobre os modos operacionais"].
 
 Credenciais novas e existentes da AWS podem ser visualizadas na página Configurações do BlueXP  > *credenciais*.
 
