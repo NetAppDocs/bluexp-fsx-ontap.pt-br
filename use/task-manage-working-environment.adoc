@@ -38,7 +38,7 @@ image:screenshot-system-manager.png["Uma captura de tela do painel direito no Bl
 
 Você pode provisionar e gerenciar recursos do sistema de arquivos do FSX for ONTAP (volumes, compartilhamentos CIFS, políticas de exportação e muito mais) usando o Amazon CloudFormation.
 
-link:https://github.com/NetApp/NetApp-CloudFormation-FSx-ONTAP-provider[""]
+link:https://github.com/NetApp/NetApp-CloudFormation-FSx-ONTAP-provider["NetApp CloudFormation FSX for ONTAP provider repositório GitHub"^]
 
 
 
