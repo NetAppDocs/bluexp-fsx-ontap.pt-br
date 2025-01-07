@@ -18,10 +18,10 @@ indexpage:
       url: "/use/task-creating-fsx-working-environment.html"
   - title: Use o FSX para ONTAP
     links:
+    - title: Crie um sistema de arquivos FSX for ONTAP
+      url: "/use/task-creating-fsx-working-environment.html"
     - title: Gerencie um sistema de arquivos FSX for ONTAP
       url: "/use/task-manage-working-environment.html"
-    - title: Configuração de host NVMe e iSCSI
-      url: https://docs.netapp.com/us-en/ontap-sanhost/
   - title: Conhecimento e apoio
     links:
     - title: Registre-se para obter suporte
