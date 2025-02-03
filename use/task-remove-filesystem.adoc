@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: use/task-remove-filesystem.html 
+keywords: amazon fsx for netapp ontap, fsx for ontap, fsx, remove fsx for ontap file system, remove file system, workspace, file system, disassociate file system, working environment 
+summary: Remova um sistema de arquivos FSX for ONTAP de uma área de trabalho na tela do BlueXP . 
+---
+= Remova um sistema de arquivos FSX for ONTAP de uma área de trabalho no BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Remova um sistema de arquivos FSX for ONTAP de uma área de trabalho na tela do BlueXP . Esta operação dissocia o sistema de arquivos de um workspace para que você possa associá-lo a outro workspace dentro da mesma conta.
+
+.Sobre esta tarefa
+Remover um sistema de arquivos FSX for ONTAP de uma área de trabalho remove-o do BlueXP . Ele não exclui o sistema de arquivos FSX for ONTAP. Mais tarde, você pode redescobrir o sistema de arquivos FSX for ONTAP, ou ambiente de trabalho, no mesmo ou em um espaço de trabalho diferente da mesma conta.
+
+.Passos
+. Abra a tela BlueXP .
+. Selecione o ambiente de trabalho que contém o sistema de ficheiros que pretende remover.
+. Selecione *entrar em ambiente de trabalho*.
+. Na guia FSX for ONTAP em armazenamento, selecione o menu de três pontos e selecione *Remover do espaço de trabalho*.
++
+image:screenshot-remove-file-system.png["Uma captura de tela do menu aberto no sistema de arquivos. A opção para remover do espaço de trabalho é realçada."]
+
+. Selecione *Remover* para confirmar a remoção do sistema de arquivos da área de trabalho.
+
+
+.Resultado
+O sistema de arquivos é removido da área de trabalho. Agora você pode associar o sistema de arquivos a outro workspace dentro da mesma conta.

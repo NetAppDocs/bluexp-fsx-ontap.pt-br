@@ -32,7 +32,7 @@ indexpage:
     links:
     - title: Comunidade NetApp
       url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
-    - title: Blog do Cloud Central
-      url: https://cloud.netapp.com/blog
-    - title: Webinars na nuvem
-      url: https://cloud.netapp.com/events
+    - title: BlueXP  blog
+      url: https://bluexp.netapp.com/blog
+    - title: Webinars da BlueXP
+      url: https://bluexp.netapp.com/events

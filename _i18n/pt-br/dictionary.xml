@@ -229,7 +229,6 @@
   <block id="e8a65a6e18181830b2120e5483813a7c" category="inline-image-macro">Uma captura de tela do FSX for ONTAP na página ambientes de trabalho.</block>
   <block id="0a36ca26ad15ff942eab97eaaf29fdaa" category="paragraph"><block ref="0a36ca26ad15ff942eab97eaaf29fdaa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e69624fa729e14e6bbcae0cf7889e100" category="section-title">Descubra um sistema de arquivos FSX for ONTAP existente</block>
-  <block id="982342913ed4c65e25bbc0d7a29cc903" category="paragraph">Se você já forneceu suas credenciais da AWS para o BlueXP , *My ESTATE* pode descobrir e sugerir automaticamente os sistemas de arquivos FSX for ONTAP para adicionar e gerenciar usando o BlueXP . Você também pode revisar os serviços de dados disponíveis.</block>
   <block id="75b0fcc2885b1eaac454cf9392c47fae" category="inline-image-macro">Uma captura de tela da página My ESTATE para o FSX for ONTAP.</block>
   <block id="442b9b00a851e385483f988d6deb5a9b" category="paragraph"><block ref="442b9b00a851e385483f988d6deb5a9b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0187b41b8a735f30cc0556afd7387b9d" category="list-text">Se selecionar um cluster sem nome, receberá uma mensagem para introduzir um nome para o cluster.</block>
@@ -293,8 +292,6 @@
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conhecimento e apoio</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs &amp; comunidade</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Comunidade NetApp</block>
-  <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Blog do Cloud Central</block>
-  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinars na nuvem</block>
   <block id="c82c15e6d66564201da1f424b2fb9bf4" category="sidebar">Documentos do Amazon FSX para NetApp ONTAP</block>
   <block id="c0fde7a894f20194ba5123471f8cf7e7" category="doc">Hora de início da janela de manutenção</block>
   <block id="12ad4af5f024e558448bad702ec7ef28" category="section-title">Distribuir dados de volume usando FlexGroups</block>
@@ -485,7 +482,6 @@
   <block id="f009614070b8aab7ff6edcea9473b3dc" category="list-text">*Período de retenção de backup automático*: Insira o número de dias para reter backups automáticos.</block>
   <block id="1972e6c134f87506bf46fce45a157104" category="list-text">*Janela de backup automático diário*: Selecione *sem preferência* (uma hora de início de backup diário está selecionada para você) ou *Selecione hora de início para backups diários* e especifique uma hora de início.</block>
   <block id="86405f997495dd34a1622331050968f1" category="list-text">*Janela de manutenção semanal*: Selecione *Nenhuma preferência* (uma hora de início semanal da janela de manutenção está selecionada para você) ou *Selecione hora de início para a janela de manutenção semanal de 30 minutos* e especifique uma hora de início.</block>
-  <block id="fdd4e6d5336f63e5e3b316a5dbe44233" category="paragraph">Você pode descobrir os sistemas de arquivos do FSX for ONTAP quando <block ref="404d10cea82157b7a7699acad79a879b" category="inline-xref-macro-rx"></block>você ou usando a página *My ESTATE*.</block>
   <block id="349958259dd49476726070e76dda5206" category="open-title">Descubra através da adição de um ambiente de trabalho</block>
   <block id="952ff28dcd9917d9b29e1d17f6864da8" category="list-text">No BlueXP , adicione um novo ambiente de trabalho, selecione *Amazon Web Services* e selecione *Discover existing* para o Amazon FSX for NetApp ONTAP.</block>
   <block id="a215513cec89c1166e43734f47ded960" category="list-text">Selecione as credenciais e a região para exibir os sistemas de arquivos existentes.</block>
@@ -512,22 +508,17 @@
   <block id="ef6d447dfd058c571b634d6f5b947f6e" category="section-title">Faça backup e recupere seus dados</block>
   <block id="204f9f4c04a92480ba6bbf9ce3d1cd94" category="paragraph">O serviço de backup e recuperação da BlueXP  fornece proteção de dados eficiente, segura e econômica para dados, bancos de dados e máquinas virtuais da NetApp ONTAP, tanto no local quanto na nuvem.</block>
   <block id="dc4d5c6845d6cae09bd4a83332412fb4" category="inline-link">Comece a usar o backup e a recuperação do BlueXP </block>
-  <block id="443f6eef9ae4a6ef26af0a6840fb71f9" category="paragraph"><block ref="443f6eef9ae4a6ef26af0a6840fb71f9" category="inline-link-rx"></block></block>
   <block id="5a6353203dc5a25ec421fe17e02cb7ad" category="section-title">Transfira e sincronize dados</block>
   <block id="05bec3dc9de263528ef947ed16ae20f6" category="paragraph">A cópia e sincronização do BlueXP  é um serviço de replicação e sincronização em nuvem para transferir dados nas entre armazenamentos de objetos em nuvem e no local.</block>
   <block id="a6956affbbec6348cfd2c757bda84c91" category="inline-link">Comece a usar a cópia e a sincronização do BlueXP </block>
-  <block id="c304cdd5ae17948a8050516ac1e6dc04" category="paragraph"><block ref="c304cdd5ae17948a8050516ac1e6dc04" category="inline-link-rx"></block></block>
   <block id="09268df17735c9b5a1451dfeacf85b4a" category="section-title">Analise e classifique seus dados</block>
   <block id="602092b7bfa82b05561c89daaa069630" category="paragraph">A classificação do BlueXP  permite verificar e classificar dados na multicloud híbrida da organização.</block>
   <block id="d8de079e15da5552ea52e16c0712106a" category="inline-link">Comece a usar a classificação BlueXP </block>
-  <block id="247c5c87eedf564ee5c6ea895f120d9c" category="paragraph"><block ref="247c5c87eedf564ee5c6ea895f120d9c" category="inline-link-rx"></block></block>
   <block id="472d7c50c99e8a4ceb030233bf6e333a" category="paragraph">A replicação do BlueXP  permite replicar dados entre sistemas de storage da ONTAP para dar suporte ao backup e à recuperação de desastres na nuvem ou entre nuvens.</block>
   <block id="7e0c92d9ea0baa7f084f0d447b311869" category="inline-link">Comece a usar a replicação do BlueXP </block>
-  <block id="07bb82f5ab64a82fea4197ee1a8a2573" category="paragraph"><block ref="07bb82f5ab64a82fea4197ee1a8a2573" category="inline-link-rx"></block></block>
   <block id="16c3de9bb24bfc929036891ca3fd5ec9" category="section-title">Acelerar o acesso ou descarregar tráfego</block>
   <block id="181a7eb5793d6eaf19eeb2203348f0db" category="paragraph">O armazenamento em cache de volume do BlueXP  fornece um volume persistente e gravável em um local remoto. Você pode usar o armazenamento em cache de volume do BlueXP  para acelerar o acesso aos dados ou descarregar tráfego de volumes acessados com muita frequência.</block>
   <block id="313a40d48e7994cb8956da44fd9602f1" category="inline-link">Comece a usar o armazenamento em cache de volume do BlueXP </block>
-  <block id="02a2d5dac7e811fa480b87a01b7c8754" category="paragraph"><block ref="02a2d5dac7e811fa480b87a01b7c8754" category="inline-link-rx"></block></block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">11 de novembro de 2024</block>
   <block id="cf9ae4b94802ab988b8884ed9bf12509" category="sidebar">Gerenciamento do Amazon FSX para NetApp ONTAP usando o BlueXP </block>
   <block id="622ad6297367666ca450d994236cbc2d" category="paragraph">Se você está procurando a opção _Advanced view_, que permite gerenciar um sistema de arquivos FSX for ONTAP usando o Gerenciador de sistema do ONTAP, agora você pode encontrar essa opção na tela do BlueXP  depois de selecionar o ambiente de trabalho.</block>
@@ -579,4 +570,84 @@
   <block id="e211b2db96a2f5b2b2868517a76988c8" category="paragraph">Você pode provisionar e gerenciar recursos do sistema de arquivos do FSX for ONTAP (volumes, compartilhamentos CIFS, políticas de exportação e muito mais) usando o Amazon CloudFormation.</block>
   <block id="12980bf72a2406244df6aef483456919" category="inline-link-macro">NetApp CloudFormation FSX for ONTAP provider repositório GitHub</block>
   <block id="b3a3ca9e921248f6932d9ed563709366" category="paragraph"><block ref="b3a3ca9e921248f6932d9ed563709366" category="inline-link-macro-rx"></block></block>
+  <block id="8f0b3ce2b96f337852fd1c252724a612" category="doc">Associe o sistema de arquivos FSX for ONTAP com um espaço de trabalho no BlueXP </block>
+  <block id="da3003c64aba681511ac42ea840639fa" category="paragraph">Após a integração do BlueXP  em novembro de 2024, os sistemas de arquivos FSX para ONTAP recém-criados não foram associados a um workspace no BlueXP . Agora, quando você cria ou descobre os sistemas de arquivos FSX for ONTAP, eles estão associados a um espaço de trabalho em uma conta do BlueXP .</block>
+  <block id="4716735cca1c0ec4ab6acb97d14dcaa7" category="inline-link-macro">Crie um caso com o suporte da NetApp</block>
+  <block id="f0100d47b49cbe11e6a325bdee8db6ff" category="paragraph">Se você já possui sistemas de arquivos FSX for ONTAP que não estão associados a um espaço de trabalho, ajudaremos você a associá-los a um espaço de trabalho no BlueXP . Você pode <block ref="d0e0ce62131d959daa6f062d97c0d6a8" category="inline-link-macro-rx"></block>de dentro do console do BlueXP . Selecione *Workload Factory* como serviço.</block>
+  <block id="ca67d4d470c8d498e9ac0294cf4f7805" category="section-title">Remoção do sistema de arquivos da tela BlueXP </block>
+  <block id="b93cfe5d8c5b8d31c6e277f9086d4e40" category="paragraph">Agora você pode remover um sistema de arquivos FSX for ONTAP de uma área de trabalho na tela do BlueXP . Esta operação dissocia o sistema de arquivos de um workspace para que você possa associá-lo a outro workspace dentro da mesma conta do BlueXP .</block>
+  <block id="181840612e9e637bf9dbbc740a738a45" category="inline-link-macro">Saiba como remover um sistema de arquivos FSX for ONTAP de uma área de trabalho no BlueXP </block>
+  <block id="e3d09410dae9543aebfcc83b7bceebc5" category="paragraph"><block ref="e3d09410dae9543aebfcc83b7bceebc5" category="inline-link-macro-rx"></block></block>
+  <block id="ea3d4df6f8aff21b2dfe549c5ecf9775" category="section-title">Tracker disponível para operações de monitoramento e rastreamento</block>
+  <block id="ce9be95deabee3be9356a5b5de8e7b0b" category="paragraph">O Rastreador, uma nova funcionalidade de monitoramento, está disponível no BlueXP  Amazon FSX for NetApp ONTAP. Você pode usar o Rastreador para monitorar e rastrear o andamento e o status das credenciais, armazenamento e operações de link, analisar detalhes de tarefas e subtarefas de operação, diagnosticar problemas ou falhas, editar parâmetros para operações com falha e repetir operações com falha.</block>
+  <block id="0672b60d374d87a810fa73810e4a0a82" category="inline-link-macro">Saiba como monitorar e acompanhar as operações do FSX for ONTAP no BlueXP </block>
+  <block id="d3626ed21f71a99d578970f5e4960cdc" category="paragraph"><block ref="d3626ed21f71a99d578970f5e4960cdc" category="inline-link-macro-rx"></block></block>
+  <block id="27a901c04d21dffe48f2fc38150f7c5c" category="section-title">CloudShell disponível nas cargas de trabalho do BlueXP </block>
+  <block id="30e5906a069abe8bb88f1aed916b358b" category="paragraph">O CloudShell está disponível quando você está em cargas de trabalho do BlueXP  no console do BlueXP . O CloudShell permite que você use as credenciais da AWS e do ONTAP fornecidas em sua conta do BlueXP  e execute os comandos da CLI da AWS ou da CLI do ONTAP em um ambiente semelhante a um shell.</block>
+  <block id="4ab00ae468588a563b956d814954695d" category="inline-link-macro">Use o CloudShell</block>
+  <block id="71ee7ec26ff8d29a0d286a605f08aeb5" category="paragraph"><block ref="71ee7ec26ff8d29a0d286a605f08aeb5" category="inline-link-macro-rx"></block></block>
+  <block id="1f7f7589b5db575980a7c6142051bb44" category="paragraph">Se você já forneceu suas credenciais da AWS para o BlueXP , *My ESTATE* pode descobrir e sugerir automaticamente os sistemas de arquivos do FSX for ONTAP em uma área de trabalho para adicionar e gerenciar usando o BlueXP . Você também pode revisar os serviços de dados disponíveis.</block>
+  <block id="142acbaf383c4f4c44d1693c75c309df" category="paragraph">Você pode descobrir os sistemas de arquivos do FSX for ONTAP quando você adiciona um ambiente de trabalho ou usando a página *My ESTATE*.</block>
+  <block id="0e2c79da1cf7b4ae88e08f783a1f7f85" category="paragraph">Você pode descobrir um sistema de arquivos FSX for ONTAP apenas uma vez dentro de uma conta do BlueXP  e anexá-lo a um workspace. O sistema de arquivos pode ser removido posteriormente e re-associado a uma área de trabalho diferente.</block>
+  <block id="bb9dd1dadbb44c5999c361a888ce7b52" category="paragraph"><block ref="bb9dd1dadbb44c5999c361a888ce7b52" category="inline-link-macro-rx"></block></block>
+  <block id="e4ccef50e21a93e2c4ad1575929dd1c0" category="paragraph"><block ref="e4ccef50e21a93e2c4ad1575929dd1c0" category="inline-link-macro-rx"></block></block>
+  <block id="c3666c02e58a1a452d016e0662f0cf24" category="paragraph"><block ref="c3666c02e58a1a452d016e0662f0cf24" category="inline-link-macro-rx"></block></block>
+  <block id="7146cfeb3de94ee7bb218b6c62349f32" category="paragraph"><block ref="7146cfeb3de94ee7bb218b6c62349f32" category="inline-link-macro-rx"></block></block>
+  <block id="68c02508c11e8fb93803c12c19cba60b" category="paragraph"><block ref="68c02508c11e8fb93803c12c19cba60b" category="inline-link-macro-rx"></block></block>
+  <block id="1d871a79e130277eac94bdf23b8f559d" category="summary">Acompanhe as operações do FSX for ONTAP e monitore o progresso da operação com o Rastreador no BlueXP .</block>
+  <block id="16edaff1d441f823f269cfb57989844e" category="doc">Monitore as operações do FSX para ONTAP com o Rastreador no BlueXP </block>
+  <block id="c51aab10e5fd03127f375a02c70e31d1" category="paragraph">Monitore e acompanhe a execução das operações do FSX for ONTAP e monitore o progresso do trabalho com o Rastreador no BlueXP .</block>
+  <block id="030aa1dc2f523ee33fca72b98728f303" category="paragraph">O BlueXP  fornece o Rastreador, um recurso de monitoramento de tarefas, para que você possa monitorar e acompanhar o andamento e o status das credenciais, o FSX for ONTAP e vincular operações, analisar detalhes de tarefas e subtarefas operacionais, diagnosticar problemas ou falhas, editar parâmetros para operações com falha e tentar novamente operações com falha.</block>
+  <block id="6092aff2fd96382c8039bf4b05f69f42" category="paragraph">Várias ações estão disponíveis no Tracker. Você pode filtrar tarefas por período de tempo (últimas 24 horas, 7 dias, 14 dias ou 30 dias), carga de trabalho, status e usuário; encontrar trabalhos usando a função de pesquisa; e fazer download da tabela de tarefas como um arquivo CSV. Você pode atualizar o Tracker a qualquer momento. E você pode tentar novamente rapidamente uma operação com falha ou editar parâmetros para uma operação com falha e tentar a operação novamente.</block>
+  <block id="f2cee538b7196c0114b7722b311de074" category="paragraph">O Tracker suporta dois níveis de monitoramento. Cada tarefa, como a criação de um sistema de arquivos, exibe a descrição da tarefa, status, hora de início, duração da tarefa, usuário, região, recurso proxy (associação de link), ID da tarefa e todas as subtarefas relacionadas.</block>
+  <block id="5cdbeb1c4cc65e8f551e161828701113" category="list-text">Monitore níveis de tarefa com exemplos</block>
+  <block id="05bee9860c0a2efcc43ba9c2e7d71a73" category="list-text">Nível 1 (tarefa pai): Controla a implantação do sistema de arquivos.</block>
+  <block id="bf4ab25188da8d1000fe4fd110b6cc4e" category="list-text">Nível 2 (subtarefa): Controla as subtarefas relacionadas com a implementação do sistema de ficheiros.</block>
+  <block id="88ebc1f479e6de47fd711c4be81c4d26" category="list-text">Estado da operação</block>
+  <block id="afcc9733e2e2e0ce70f1ecee29c8f008" category="list-text">O status da operação no Rastreador é o seguinte _em andamento_, _sucesso_ e _falha_.</block>
+  <block id="de32977622108a1960ab0fcf45adaf80" category="list-text">Frequência de funcionamento</block>
+  <block id="022fef07caaf81251c161d613a8e6f85" category="list-text">A frequência de operação é baseada no tipo de tarefa e no agendamento.</block>
+  <block id="01b0a4fcc33bdafd6e65537f24f463de" category="list-text">Retenção de eventos</block>
+  <block id="b3c382e94f4b4abcc049ce95e85dc998" category="list-text">Os eventos são mantidos na interface do usuário por 30 dias.</block>
+  <block id="cfd98e00a6e308c04ab9f76a854b6989" category="section-title">Monitorizar e monitorizar as operações</block>
+  <block id="c82c26735f08b789c8bf574ab4962fcc" category="paragraph">Acompanhe e monitore operações no BlueXP  com o Rastreador.</block>
+  <block id="d51ebf84f8f30e997f35794e227907ae" category="list-text">No console do BlueXP , selecione o ícone *Configurações* e selecione *Rastreador*.</block>
+  <block id="a301bc4d160159df428e6b29eab6333e" category="list-text">Em armazenamento, selecione *ir para inventário de armazenamento*.</block>
+  <block id="4c9c3849ae936d9b1971b7ef937c7806" category="list-text">No inventário de armazenamento, selecione o menu de configurações da conta e, em seguida, selecione *Rastreador*.</block>
+  <block id="88ee2542e5aa332003842ebd817696a7" category="inline-image-macro">Uma captura de tela do menu com a opção Rastreador destacada.</block>
+  <block id="0aef4d417e98f06f69c3771226cc1a4d" category="paragraph"><block ref="0aef4d417e98f06f69c3771226cc1a4d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="924a1477b641b7b28d303e9311f88abf" category="list-text">No Rastreador, exiba tarefas ou use os filtros ou a pesquisa para restringir resultados. Você também pode fazer o download de um relatório de todas as operações selecionando *Exportar CSV*.</block>
+  <block id="aa2a2cd452f8a71b2f2dcdae68114732" category="section-title">Exibir solicitação de API</block>
+  <block id="68538d555ae12c680ea428aaa850d90f" category="paragraph">Visualize a solicitação de API na caixa de código para uma tarefa no Tracker.</block>
+  <block id="968877018213bf42962084001c210472" category="list-text">No Rastreador, selecione uma tarefa.</block>
+  <block id="2e6179b36329b65c38a5ca113ba0c81c" category="list-text">Selecione o menu de três pontos e, em seguida, selecione *View API Request*.</block>
+  <block id="1448fba076a066622a9f93a25ab170a2" category="section-title">Tente novamente uma operação com falha</block>
+  <block id="56eb6c53bc5ad3cbe11ab166461fb605" category="paragraph">Tente novamente uma operação com falha no Tracker. Tentar novamente a operação com falha inicia uma nova tarefa que você pode monitorar no Rastreador.</block>
+  <block id="317e8935767e44f36a7f09e598619586" category="paragraph">Você também pode copiar a mensagem de erro de uma operação com falha.</block>
+  <block id="05a0e019b2575b1e6a5eeba3445d9c35" category="admonition">Pode tentar novamente a operação com falha apenas uma vez.</block>
+  <block id="b866b632b7f32ded2a0a0907100641bf" category="list-text">No Rastreador, selecione uma operação com falha.</block>
+  <block id="5d0eaa0ad00baabb57cbc22969070918" category="list-text">Selecione o menu de três pontos e, em seguida, selecione *Repetir*.</block>
+  <block id="a5c228cdc546168f2b7d298d94b3c378" category="paragraph">A operação é reiniciada e aparece como uma nova tarefa no Rastreador.</block>
+  <block id="bde5076ae2a993de9042a7e1dd4dc445" category="section-title">Edite e tente novamente uma operação com falha</block>
+  <block id="2ae5a8ae85adca2aebf16aa81130c9c5" category="paragraph">Edite os parâmetros da operação com falha e tente novamente a operação fora do Rastreador.</block>
+  <block id="524ab960a72817bd7f9f107dc357d1bd" category="list-text">Selecione o menu de três pontos e, em seguida, selecione *Editar e tentar novamente*.</block>
+  <block id="9ee78825a71be6f2186eeff17cc5bced" category="paragraph">Você é redirecionado para a página de operação, criação de volume, por exemplo, onde você pode editar os parâmetros e tentar novamente a operação.</block>
+  <block id="49814788ce382c87a117a40e54ae858b" category="paragraph">A operação é reiniciada. Aceda a Rastreador para ver o estado da operação.</block>
+  <block id="e3e20b4e3f6f30bbb024a16d967a0767" category="summary">Remova um sistema de arquivos FSX for ONTAP de uma área de trabalho na tela do BlueXP .</block>
+  <block id="2b4eae72efd65c4d6cfe561500479d7e" category="doc">Remova um sistema de arquivos FSX for ONTAP de uma área de trabalho no BlueXP </block>
+  <block id="fe2a091331b6b30ad1f182ae5bf400b4" category="paragraph">Remova um sistema de arquivos FSX for ONTAP de uma área de trabalho na tela do BlueXP . Esta operação dissocia o sistema de arquivos de um workspace para que você possa associá-lo a outro workspace dentro da mesma conta.</block>
+  <block id="2764f93dd3f66026cca067642f120cc4" category="paragraph">Remover um sistema de arquivos FSX for ONTAP de uma área de trabalho remove-o do BlueXP . Ele não exclui o sistema de arquivos FSX for ONTAP. Mais tarde, você pode redescobrir o sistema de arquivos FSX for ONTAP, ou ambiente de trabalho, no mesmo ou em um espaço de trabalho diferente da mesma conta.</block>
+  <block id="184be1e459fe15fd43e8bcfaf38875d7" category="list-text">Abra a tela BlueXP .</block>
+  <block id="21b5a9a09ee53b2922c671cbce55fbab" category="list-text">Selecione o ambiente de trabalho que contém o sistema de ficheiros que pretende remover.</block>
+  <block id="142f19a6fcdd22cd8abf5bfcd2c68102" category="list-text">Selecione *entrar em ambiente de trabalho*.</block>
+  <block id="1bc6332cc112db28dc5e9019fe85cd5d" category="list-text">Na guia FSX for ONTAP em armazenamento, selecione o menu de três pontos e selecione *Remover do espaço de trabalho*.</block>
+  <block id="429071c25340d9ebdc16757792c427b1" category="inline-image-macro">Uma captura de tela do menu aberto no sistema de arquivos. A opção para remover do espaço de trabalho é realçada.</block>
+  <block id="c48ef3806321a2b9ac1d6e11bfa40543" category="paragraph"><block ref="c48ef3806321a2b9ac1d6e11bfa40543" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="76315fb6d432bfd5b873573f43b9b090" category="list-text">Selecione *Remover* para confirmar a remoção do sistema de arquivos da área de trabalho.</block>
+  <block id="b166d8a9af8a67898df7389179e0d6a2" category="paragraph">O sistema de arquivos é removido da área de trabalho. Agora você pode associar o sistema de arquivos a outro workspace dentro da mesma conta.</block>
+  <block id="986aee2caba870111e5ce3c5571c82de" category="section-title">02 de fevereiro de 2025</block>
+  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP  blog</block>
+  <block id="f93e4e0ba0745745e36a3b67b14a8a5b" category="sidebar">Webinars da BlueXP</block>
+  <block id="2e0c4c64c2671f5575eb184e577dcdae" category="sidebar">Monitore as operações com o Tracker</block>
+  <block id="26efc0a2e060feb5086fc0ee17ded6e1" category="sidebar">Remover um sistema de arquivos de uma área de trabalho</block>
 </blocks>

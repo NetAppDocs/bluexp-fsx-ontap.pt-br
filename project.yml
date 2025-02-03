@@ -28,6 +28,10 @@ sidebar:
       url: "/use/task-creating-fsx-working-environment.html"
   - title: Gerencie um sistema de arquivos FSX for ONTAP
     url: "/use/task-manage-working-environment.html"
+  - title: Monitore as operações com o Tracker
+    url: "/use/task-monitor-operations.html"
+  - title: Remover um sistema de arquivos de uma área de trabalho
+    url: "/use/task-remove-filesystem.html"
   - title: Conhecimento e apoio
     entries:
     - title: Registre-se para obter suporte
