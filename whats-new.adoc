@@ -18,6 +18,18 @@ Saiba o que há de novo no FSX for ONTAP.
 
 
 
+== 30 de março de 2025
+
+
+
+=== IAM:Atualização de permissão SimulatePermissionPolicy
+
+Agora você pode gerenciar a `iam:SimulatePrincipalPolicy` permissão no console do BlueXP  ao adicionar credenciais adicionais de conta da AWS ou adicionar uma nova funcionalidade de workload, como o workload do GenAI.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["Log de alteração de referência de permissões"^]
+
+
+
 == 02 de março de 2025
 
 
